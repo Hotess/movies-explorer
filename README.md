@@ -1,7 +1,6 @@
 # [Movies Explorer](https://tiger-movies.nomoredomains.icu)
 
-Сервис для поиска фильмов
-=
+##Сервис для поиска фильмов
 
 ![Превью проекта Movies Explorer](./movies-explorer.png)
 
