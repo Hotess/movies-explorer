@@ -1,0 +1,14 @@
+.container {
+    border-top: 1px solid rgba(170, 170, 170, .2);
+    padding: 150px 0 100px;
+}
+
+.movies__button_delete {
+    background: url("./../../images/movies/delete.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 200px 0 150px;
+    }
+}

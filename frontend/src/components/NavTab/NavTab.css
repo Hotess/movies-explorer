@@ -1,0 +1,38 @@
+.navigation {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 17px;
+}
+
+.link {
+    background-color: #303030;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    transition: .1s ease;
+    border-radius: 10px;
+    font-size: .625rem;
+    font-weight: 500;
+}
+
+.link:nth-of-type(2) {
+    margin: 0 6px;
+}
+
+.link:hover {
+    opacity: .6;
+}
+
+@media (min-width: 768px) {
+    .link {
+        font-size: .75rem;
+    }
+
+    .link:nth-of-type(2) {
+        margin: 0 10px;
+    }
+
+    .navigation {
+        margin-bottom: 30px;
+    }
+}

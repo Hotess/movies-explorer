@@ -1,0 +1,49 @@
+.container {
+    border-top: 1px solid rgba(170, 170, 170, .2);
+    padding: 150px 0 100px;
+}
+
+.movies__button_not-saved {
+    background: url("./../../images/movies/not-saved.svg") no-repeat;
+}
+
+.movies__button_saved {
+    background: url("./../../images/movies/saved.svg") no-repeat;
+}
+
+.movies__button-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+}
+
+.movies__still {
+    color: white;
+    width: 240px;
+    line-height: 15px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #424242;
+    outline: none;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    user-select: none;
+}
+
+.movies__still:hover {
+    opacity: .6;
+}
+
+@media (min-width: 768px) {
+    .movies__still {
+        width: 320px;
+    }
+
+    .container {
+        padding: 200px 0 150px;
+    }
+}

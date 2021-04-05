@@ -1,0 +1,157 @@
+.aboutMe {
+    width: 291px;
+    margin: 70px auto;
+}
+
+.aboutMe__title {
+    color: white;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: -0.04em;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #DADADA;
+    margin: 0 0 60px;
+}
+
+.aboutMe__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe__container-life {
+    color: white;
+    order: 2;
+}
+
+.aboutMe__heading {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+    margin: 0 0 20px;
+}
+
+.aboutMe__profession {
+    font-size: .6875rem;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+    margin: 0 0 20px;
+}
+
+.aboutMe__text {
+    font-size: .6875rem;
+    line-height: 16px;
+    mix-blend-mode: normal;
+    margin: 0 0 40px;
+}
+
+.aboutMe__link {
+    color: white;
+    font-size: .875rem;
+    line-height: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.aboutMe__link:not(:last-child) {
+   margin-right: 25px;
+}
+
+.aboutMe__link:hover {
+    opacity: .6;
+}
+
+.aboutMe__image {
+    background: url("./../../images/aboutMe/Pavel.png") no-repeat center;
+    background-size: cover;
+    padding-bottom: 36vh;
+    border-radius: 10px;
+    order: 1;
+    margin-bottom: 40px;
+    height: 0;
+}
+
+@media (min-width: 768px) {
+    .aboutMe {
+        width: 660px;
+        margin: 90px auto;
+    }
+
+    .aboutMe__title {
+        font-size: 1.375rem;
+        line-height: 27px;
+        padding-bottom: 23px;
+        margin: 0 0 65px;
+    }
+
+    .aboutMe__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutMe__container-life {
+        width: 365px;
+        order: 1;
+    }
+
+    .aboutMe__heading {
+        font-size: 2.5rem;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .aboutMe__profession {
+        font-size: .75rem;
+        line-height: 18px;
+    }
+
+    .aboutMe__text {
+        font-size: .75rem;
+        line-height: 18px;
+        margin-bottom: 87px;
+    }
+
+    .aboutMe__image {
+        width: 255px;
+        padding-bottom: 32vh;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .aboutMe {
+        width: 1140px;
+        margin: 110px auto;
+    }
+
+    .aboutMe__container-life {
+        width: 600px;
+    }
+
+    .aboutMe__heading {
+        font-size: 3.125rem;
+        line-height: 58px;
+        margin-bottom: 20px;
+    }
+
+    .aboutMe__profession {
+        font-size: 1.125rem;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    .aboutMe__text {
+        font-size: .875rem;
+        line-height: 22px;
+        margin-bottom: 100px;
+    }
+
+    .aboutMe__image {
+        width: 270px;
+        padding-bottom: 34vh;
+    }
+}

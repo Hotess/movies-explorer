@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 14px;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  transition: .1s ease;
+  user-select: none;
+  cursor: pointer;
+  font-size: .625rem;
+  font-weight: 500;
+}
+
+.header__link:first-of-type {
+  margin-right: 16px;
+}
+
+.header__link:hover {
+  opacity: 0.6;
+}
+
+.header__link_type_enter {
+  color: black;
+  padding: 5px 12px;
+  background-color: #3DDC84;
+  border-radius: 2px;
+  transition: .2s ease-in;
+}
+
+.header__link_type_enter:hover {
+  box-shadow: 0 0 0 2px #202020, 0 0 0 4px #3DDC84;
+  opacity: 0.7;
+}
+
+.header__link_type_account {
+  display: none;
+  font-size: .8125rem;
+  align-items: center;
+}
+
+.header__account {
+  line-height: 12px;
+  padding-right: 7px;
+  margin: 0;
+}
+
+.header__image {
+  background: url("./../../images/header/account.svg") no-repeat center, url("./../../images/header/background-account.svg") no-repeat center;
+  width: 26px;
+  height: 26px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 18px 30px;
+  }
+
+  .header__link {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    margin: 18px 70px;
+  }
+
+  .header__link_type_account {
+    display: flex;
+  }
+}

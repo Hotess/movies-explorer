@@ -1,0 +1,11 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: #202020;
+  font-family: "Inter", "Arial", sans-serif;
+}

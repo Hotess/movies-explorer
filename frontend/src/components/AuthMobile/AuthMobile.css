@@ -1,0 +1,141 @@
+.auth-mobile {
+    position: fixed;
+    z-index: 1;
+    right: -100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+    margin-top: -18px;
+    user-select: none;
+    transition: .8s ease-in-out;
+}
+
+.auth-mobile_opened {
+    right: 0;
+}
+
+.auth-mobile__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-mobile__close {
+    background: url("./../../images/hamburger/button-close.svg") no-repeat center;
+    align-self: flex-end;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    margin: 15px 15px 0;
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+.auth-mobile__close:hover {
+    opacity: .6;
+}
+
+.auth-mobile__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.auth-mobile__list-item {
+    list-style: none;
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 22px;
+}
+
+.auth-mobile__list-item:not(:first-child) {
+    margin-top: 15px;
+}
+
+.auth-mobile__link {
+    width: auto;
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.auth-mobile__navigation .auth-mobile__link:hover {
+    box-shadow: 0 2px 0 0 white;
+}
+
+.auth-mobile__container:last-child > .auth-mobile__link:hover {
+    opacity: .6;
+}
+
+.auth-mobile__container:last-child {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.auth-mobile__link_type_account {
+    display: flex;
+    align-items: center;
+}
+
+.authMobile__link_active {
+    box-shadow: 0 2px 0 0 white;
+}
+
+.authMobile__link_active_account {
+    opacity: .4;
+}
+
+.auth-mobile__account {
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 12px;
+    margin: 0;
+    padding-right: 7px;
+}
+
+.auth-mobile__image {
+    background: url("./../../images/header/account.svg") no-repeat center, url("./../../images/header/background-account.svg") no-repeat center;
+    width: 26px;
+    height: 26px;
+}
+
+@media (min-width: 768px) {
+    .auth-mobile {
+        width: 51vw;
+    }
+
+    .auth-mobile__close {
+        margin: 22px 22px 0;
+    }
+
+    .auth-mobile__navigation {
+        margin-top: 105px;
+    }
+
+    .auth-mobile__list-item:not(:first-child) {
+        margin-top: 22px;
+    }
+
+    .auth-mobile__link {
+        padding-bottom: 4px;
+    }
+
+    .auth-mobile__container:last-child {
+        margin-bottom: 90px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .auth-mobile {
+        display: none;
+    }
+}

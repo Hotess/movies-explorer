@@ -1,0 +1,34 @@
+.hamburger {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s ease;
+}
+
+.hamburger:hover {
+    opacity: .6;
+}
+
+.hamburger:after,
+.hamburger:before,
+.hamburger span {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+}
+
+.hamburger span {
+    margin: 6px 0;
+}
+
+@media (min-width: 1280px) {
+    .hamburger {
+        display: none;
+    }
+}

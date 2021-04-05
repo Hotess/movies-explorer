@@ -1,0 +1,25 @@
+.header__navigation {
+  display: none;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header__link_type_films {
+  font-size: .8125rem;
+  line-height: 18px;
+}
+
+.header__link_type_saved-films {
+  font-size: .8125rem;
+  line-height: 18px;
+}
+
+.header__link_active {
+  opacity: 0.6;
+}
+
+@media (min-width: 1280px) {
+  .header__navigation {
+    display: flex;
+  }
+}
