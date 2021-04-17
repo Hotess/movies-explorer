@@ -1,4 +1,4 @@
-# [Movies Explorer](https://tiger-movies.nomoredomains.icu) Сервис для поиска фильмов
+# Cервис для поиска фильмов [Movies Explorer](https://tiger-movies.nomoredomains.icu) 
 
 ![Превью проекта Movies Explorer](./movies-explorer.png)
 
